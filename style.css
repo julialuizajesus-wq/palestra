@@ -1,0 +1,367 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
+:root {
+    --verde-palmeiras: #006437;
+    --verde-escuro: #0a4227;
+    --dourado-premium: #bfa15f;
+    --texto-escuro: #1c2421;
+    --texto-claro: #eceff1;
+    --cinza-suve: #f8f9fa;
+    --transicao: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--texto-escuro);
+    background-color: #ffffff;
+    line-height: 1.7;
+    scroll-behavior: smooth;
+}
+
+/* --- HEADER REFINADO --- */
+header {
+    background-color: rgba(10, 66, 39, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--dourado-premium);
+}
+
+header .logo {
+    font-family: 'Cinzel', serif;
+    color: var(--texto-claro);
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+header nav a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    transition: var(--transicao);
+}
+
+header nav a:hover {
+    color: var(--dourado-premium);
+}
+
+/* --- HERO SECTION (IMPACTO) --- */
+.hero {
+    background: linear-gradient(rgba(10, 66, 39, 0.75), rgba(0, 0, 0, 0.8)), 
+                url('imagens/palestra-italia.jpg') no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-tag {
+    color: var(--dourado-premium);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: 'Cinzel', serif;
+    color: #fff;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #cbd5e1;
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: var(--verde-palmeiras);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border: 1px solid var(--dourado-premium);
+    transition: var(--transicao);
+}
+
+.btn-primary:hover {
+    background-color: var(--dourado-premium);
+    color: var(--verde-escuro);
+    transform: translateY(-3px);
+}
+
+/* --- SEÇÕES E TEXTOS --- */
+.section-container {
+    padding: 100px 8%;
+}
+
+.bg-dark {
+    background-color: var(--verde-escuro);
+}
+
+.bg-light {
+    background-color: var(--cinza-suve);
+}
+
+.text-white {
+    color: #fff;
+}
+
+.block-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.block-header h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    color: var(--verde-palmeiras);
+    margin-bottom: 15px;
+}
+
+.block-header .light-title {
+    color: var(--dourado-premium);
+}
+
+.block-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.bg-dark .block-header p {
+    color: #b0bec5;
+}
+
+/* --- GRID 2 COLUNAS & TEXTOS TEXTURIZADOS --- */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.text-block h3 {
+    font-size: 1.4rem;
+    color: var(--verde-escuro);
+    margin: 30px 0 15px 0;
+}
+
+.text-block p {
+    margin-bottom: 20px;
+    color: #455a64;
+    font-size: 1.05rem;
+}
+
+blockquote {
+    border-left: 4px solid var(--dourado-premium);
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--verde-palmeiras);
+    margin: 25px 0;
+    font-weight: 500;
+}
+
+.sticky-image {
+    position: sticky;
+    top: 120px;
+}
+
+.sticky-image img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.image-caption {
+    display: block;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* --- ACADEMIAS BOX --- */
+.academy-box {
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-top: 3px solid var(--dourado-premium);
+}
+
+.academy-box span {
+    color: var(--dourado-premium);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.academy-box h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    margin: 10px 0 15px 0;
+}
+
+.academy-box p {
+    color: #cfd8dc;
+}
+
+/* --- CARDS DE ÍDOLOS PREMIUM --- */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: var(--transicao);
+    border: 1px solid #eee;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    border-color: var(--dourado-premium);
+}
+
+.card-img-wrap {
+    overflow: hidden;
+    height: 320px;
+}
+
+.profile-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transicao);
+}
+
+.profile-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-info {
+    padding: 30px;
+}
+
+.card-era {
+    color: var(--dourado-premium);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.card-info h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: var(--verde-escuro);
+    margin: 5px 0 15px 0;
+}
+
+.card-info p {
+    font-size: 0.95rem;
+    color: #546e7a;
+}
+
+/* --- LINHA DO TEMPO AVANÇADA --- */
+.timeline-advanced {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline-block {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.timeline-date {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    color: var(--verde-palmeiras);
+    min-width: 150px;
+    font-size: 1.1rem;
+    padding-top: 5px;
+    border-right: 2px solid var(--dourado-premium);
+    margin-right: 40px;
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    color: #455a64;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #052415;
+    padding: 40px 8%;
+    text-align: center;
+    color: #78909c;
+    border-top: 4px solid var(--verde-palmeiras);
+}
+
+footer .footer-content p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer .copyright {
+    font-size: 0.8rem;
+    color: #546e7a;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 992px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+    .timeline-block {
+        flex-direction: column;
+    }
+    .timeline-date {
+        border-right: none;
+        border-bottom: 2px solid var(--dourado-premium);
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+    }
+}
